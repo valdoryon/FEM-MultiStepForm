@@ -1,0 +1,29 @@
+//Colores
+@use "./colors";
+
+@mixin mainStepPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+@mixin stepInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@mixin mainButton {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: colors.$primaryblue;
+    color: #fff;
+    font-family: mainFont-Medium;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}

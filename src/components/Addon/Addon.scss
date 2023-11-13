@@ -1,0 +1,73 @@
+@use "../../sass/colors" as colors;
+
+.addon {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid colors.$lightgrey;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.addon:hover {
+    border-color: colors.$purpleborderColor;
+}
+
+.addon-info {
+    display: flex;
+    gap: 1rem;
+
+    h1 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+    }
+
+    p {
+        color: colors.$darkgrey;
+        font-family: mainFont-Regular;
+        font-size: 0.8rem;
+    }
+
+    input {
+        width: 1.1rem;        
+    }
+    input:checked {
+        accent-color: colors.$checkedBGcolor;        
+    }
+}
+
+.price {
+    p {
+        color: colors.$secondaryblue;
+        font-family: mainFont-Regular;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .addon {
+        gap: 0;
+        padding: 0.8rem;
+    }
+
+    .price {
+        font-size: 0.8rem;
+    }
+
+    .addon-info{
+
+        line-height: 1.1rem;
+        text-wrap: nowrap;
+
+
+        h1 {
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}

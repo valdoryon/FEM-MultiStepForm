@@ -1,0 +1,54 @@
+@use "../../sass/colors" as colors;
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 6.5rem;
+    gap: 2.5rem;
+    border: 1px solid colors.$lightgrey;
+    border-radius: 8px;
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.option:hover {
+    border-color: colors.$secondaryblue;
+}
+
+
+.option-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    h1 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+    }
+
+    p {
+        color: colors.$darkgrey;
+        font-family: mainFont-Regular;
+        font-size: 0.8rem;
+
+    }
+
+    p:nth-child(3) {
+        color: colors.$primaryblue;
+        font-family: mainFont-Regular;
+        font-size: 0.8rem;
+
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .option {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}

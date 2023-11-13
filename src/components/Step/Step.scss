@@ -1,0 +1,61 @@
+@use "../../sass/colors" as colors;
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    user-select: none;
+}
+
+.step-number {
+    display: grid;
+    place-items: center;
+    min-width: 2rem;
+    min-height: 2rem;
+    border-radius: 100%;
+    border: 1px solid colors.$black;
+
+    p {
+        font-family: mainFont-Medium;
+        color: colors.$white;
+    }
+}
+
+.step-progression_title {
+    display: grid;
+    gap: 5px;
+
+
+    p {
+        font-family: mainFont-Regular;
+        color: colors.$purpleStepColor;
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-family: mainFont-Regular;
+        letter-spacing: 0.1rem;
+        color: colors.$white;
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .step {
+        gap: 0;
+    }
+
+    .step-progression_title {
+        p {
+            display: none;
+        }
+
+        h3 {
+            display: none;
+        }
+        
+    }
+}

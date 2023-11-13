@@ -1,0 +1,103 @@
+@use "../../sass/colors" as colors;
+
+@use "../../sass/main_style.scss" as mainStyle;
+
+
+.step-information {
+    @include mainStyle.stepInfoContainer;
+}
+
+.billing-options {
+    display: flex;
+    gap: 0.9rem;
+}
+
+.billing-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    background-color: #f8f9fe;
+    border-radius: 5px;
+    padding: 0.9rem;
+
+    span {
+        font-family: mainFont-Bold;
+        color: colors.$primaryblue;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+.two-button_container {
+    display: flex;
+    justify-content: space-between;
+    button {
+        @include mainStyle.mainButton;
+    }
+
+    button:hover {
+        background-color: colors.$secondaryblue;
+    }
+}
+
+.two-button_container button:nth-child(1) {
+    font-family: mainFont-Medium;
+    background-color: transparent;
+    color: colors.$darkgrey;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.two-button_container button:nth-child(1):hover {
+    color: colors.$primaryblue;
+}
+
+
+@media screen and (max-width: 420px) {
+    .step-information {
+        position: absolute;
+        top: 6.2rem;
+        left: 0.9rem;
+        max-width: 80%;
+        background-color: colors.$white;
+        border-radius: 10px;
+        padding: 1.5rem 1.5rem;
+        gap: 1rem;
+        max-height: fit-content;
+    }
+
+    .billing-options {
+        flex-direction: column;
+    }
+
+    .billing-plan {
+        padding: 0.5rem;
+        span {
+            color: red;
+        }
+    }
+
+    .second-step {
+        padding: 0;
+    }
+
+    .two-button_container {        
+        background-color: white;
+        padding: 1rem;
+
+        button:nth-child(2) {
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+        }
+
+    }
+
+
+
+
+}

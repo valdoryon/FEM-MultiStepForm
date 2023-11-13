@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  position: relative;
+}
+
+#root {
+  background-color: #eef5ff;
+  display: grid;
+  place-items: center;
+}
+
+@font-face {
+  font-family: mainFont-Regular;
+  src: url('./assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+  font-family: mainFont-Medium;
+  src: url('./assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+  font-family: mainFont-Bold;
+  src: url('./assets/fonts/Ubuntu-Bold.ttf');
+}

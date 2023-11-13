@@ -1,0 +1,25 @@
+@use "../../sass/colors" as colors;
+
+.step-form_wrapper {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.step-form {
+    display: flex;    
+}
+
+@media screen and (max-width: 420px) {
+    .step-form_wrapper {
+        padding: 0;
+    }
+
+    .step-form {
+        position: relative;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: colors.$mobilebackgroundColor;
+    }
+}

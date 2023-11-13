@@ -1,0 +1,74 @@
+@use "../../sass/colors" as colors;
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    max-width: 27.5rem;
+    min-height: 100%;
+    gap: 2rem;   
+
+    img {
+        width: 4rem;
+    }
+}
+
+.thank-you_img-container {
+    display: grid;
+    place-items: center;
+}
+
+.thank-you_content {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.thank-you_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    h1 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Bold;
+    }
+
+    p {
+        color: colors.$darkgrey;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+        
+        font-family: mainFont-Regular;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .thank-you_img-container {
+        display: grid;
+        place-items: center;
+        img {
+            width: 3rem;
+        }
+
+    }
+
+    .thank-you_content {
+        position: absolute;
+        top: 6.2rem;
+        height: 50%;
+        background-color: colors.$white;
+        padding: 2.5rem;
+        border-radius: 10px;
+        max-width: 70%;
+    }
+}

@@ -1,0 +1,9 @@
+@use "../../sass/colors" as colors; 
+
+@use "../../sass/main_style.scss" as mainStyle;
+
+.optional-addons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}

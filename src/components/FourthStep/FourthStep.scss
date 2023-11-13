@@ -1,0 +1,130 @@
+@use "../../sass/colors" as colors;
+@use "../../sass/main_style.scss" as mainStyle;
+
+
+
+
+
+
+.finishing-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: colors.$backgroundLightGrey;
+    border-radius: 5px;
+    padding: 1.5rem;    
+    
+    p {
+        color: colors.$darkgrey;
+        font-size: 1rem;
+        font-family: mainFont-Regular;
+    }
+}
+
+
+.selected-plan {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    gap: 13.8rem;
+
+    
+    h3 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Medium;
+        font-size: 1rem;
+    }
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h3 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+    }
+    p {
+        color: colors.$lightBlue;
+        cursor: pointer;
+        text-decoration: underline;
+        font-family: mainFont-Regular;
+    }
+}
+
+.spacer {
+    box-sizing: content-box;
+    background-color: colors.$lightgrey;
+    height: 1px;    
+}
+
+.finishing-info_addons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.finishing-info_addon {
+    display: flex;
+    justify-content: space-between;
+
+    p:nth-child(1) {
+        color: colors.$darkgrey;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+    }
+    
+
+    p:nth-child(2) {
+        color: colors.$primaryblue;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+        
+    }
+}
+
+.finishing-info_price {
+    display: flex;
+    justify-content: space-between;   
+    padding: 0 1rem;
+    
+    p{
+        color: colors.$darkgrey;
+        font-family: mainFont-Regular;
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        color: colors.$confirmButton;
+        font-family: mainFont-Medium;
+    }
+}
+
+.two-button_container {
+    .confirm-button {
+        background-color: colors.$confirmButton;
+    }
+    .confirm-button:hover {
+        background-color: colors.$confirmButtonHover;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .finishing-info {
+        gap: 1rem;
+        padding: 1.5rem;       
+    }
+
+    .selected-plan {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .finishing-info_price {
+        justify-content: space-around;
+    }
+    
+}

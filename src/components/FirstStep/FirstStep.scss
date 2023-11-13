@@ -1,0 +1,125 @@
+@use "../../sass/colors" as colors;
+
+@use "../../sass/main_style.scss" as mainStyle;
+
+
+.main-step_container {
+    @include mainStyle.mainStepPosition;
+}
+
+.first-step_form-container {
+   @include mainStyle.stepInfoContainer;
+}
+
+.step-title { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1 {
+        color: colors.$primaryblue;
+        font-family: mainFont-Bold;
+        font-size: 2rem;
+    } 
+        
+    p {
+        color: colors.$darkgrey;
+        font-family: mainFont-Regular;
+        font-size: 1rem;
+    }
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    input {
+        width: 94%;
+        color: colors.$primaryblue;
+        padding: 0.8rem;
+        border-radius: 8px;
+        border: 1px solid colors.$lightgrey;
+        font-size: 1rem;
+        font-family: mainFont-Medium;
+    }
+
+    input:focus {
+        outline: none;
+        border: 1px solid colors.$secondaryblue;
+    }
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-error {
+    font-family: mainFont-Regular;
+    color: colors.$primaryblue;
+    display: flex;
+    justify-content: space-between;
+}
+.input-error p:nth-child(2) {
+    color: #c44e5b;
+    font-family: mainFont-Medium;
+    visibility: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+       @include mainStyle.mainButton;
+    }
+
+    button:hover {
+        background-color: colors.$secondaryblue;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .step-title {
+        h1 {
+            font-size: 1.5rem;
+        } 
+    }
+    .input-error {
+        font-size: 0.8rem;
+    }
+    
+    .main-step_container {
+        padding: 0;
+    }
+    .first-step_form-container {
+        position: absolute;
+        top: 6.2rem;
+        left: 0.9rem;
+        max-width: 75%;
+        max-height: 60%;
+        background-color: colors.$white;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .form-inputs{
+        gap: 1rem;
+    }
+
+    .button-container {        
+        background-color: white;
+        padding: 1rem;
+
+        button {
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+        }
+
+    }
+    
+}
