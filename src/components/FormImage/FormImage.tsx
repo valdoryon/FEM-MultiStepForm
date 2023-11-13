@@ -11,7 +11,7 @@ const FormImage = (props: { step: number }) => {
   };
   return (
     <div className='image-container'>
-      <img src={image} />
+      <img src={image} alt='sidebar-image' />
       <div className='steps'>
         <Step stepNumber={1} isActive={checkStep(1)} title='YOUR INFO' />
         <Step stepNumber={2} isActive={checkStep(2)} title='SELECT PLAN' />

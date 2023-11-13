@@ -20,7 +20,7 @@ const Option = (props: Props) => {
       className='option'
     >
       <div className='icon'>
-        <img src={props.icon} />
+        <img src={props.icon} alt='option-icon' />
       </div>
       <div className='option-title'>
         <h1>{props.title}</h1>
