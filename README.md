@@ -1,27 +1,38 @@
-# React + TypeScript + Vite
+# Multi-Step Form Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is my solution to the Multi-Step Form challenge from Frontend Mentor. The challenge required creating a multi-step form. I used React, TypeScript, and SaSS.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Link to live demo](#) (Replace this with the actual link once you have deployed your project)
 
-## Expanding the ESLint configuration
+[![Project Screenshot](./screenshot.png)](./screenshot.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Multi-step form with a user-friendly interface.
+- Implemented using React for dynamic and efficient UI updates.
+- Utilized TypeScript for static typing to catch errors during development.
+- Styled with SaSS for a modular and maintainable stylesheet.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/valdoryon/FEM-MultiStepForm.git
+
+   ```
+
+2. Install
+
+   ```bash
+   npm install
+
+   ```
+
+3. Run!!
+
+   ```bash
+   npm run dev
+   ```
