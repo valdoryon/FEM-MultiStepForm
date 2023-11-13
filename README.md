@@ -4,9 +4,9 @@ This project is my solution to the Multi-Step Form challenge from Frontend Mento
 
 ## Demo
 
-[Link to live demo](#) (Replace this with the actual link once you have deployed your project)
+[Link to live demo](#) (https://fem-multi-step-form-six.vercel.app/)
 
-[![Project Screenshot](./screenshot.png)](./screenshot.png)
+
 
 ## Features
 
